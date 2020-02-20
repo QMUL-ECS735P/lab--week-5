@@ -2,9 +2,9 @@ This lab sheet and all other materials can be found on GitHub here: https://gith
 
 # OWL, Ontologies, and Protege
 > **Session objectives:**
-    - Get familiar with Protege
-    - Visualise class hierarchies
-    - Build a simple ontology
+>   - Get familiar with Protege
+>   - Visualise class hierarchies
+>   - Build a simple ontology
     
 ## 1. Introduction
 In this lab we'll be using Protege, a program for creating and exploring ontologies. The lab machines already have protege installed, to run it simply open a terminal session and type:
@@ -23,22 +23,22 @@ The Protege wiki and University of Manchester tutorials would be useful to keep 
 You should have a `pizza.owl` file included in the lab materials; open Protege and then open this pizza ontology. You may also open Protege and use "Open from URL..." and paste in this URL: https://www.raw.githubusercontent.com/QMUL-ECS735P/lab-week-5/master/pizza.owl
 
 Click the `Entities` tab and explore the class hierarchy. You should see something like this on the left pane:
-![](https://www.raw.githubusercontent.com/QMUL-ECS735P/lab-week-5/master/01-class-hierarchy.png)
+![](https://github.com/QMUL-ECS735P/lab-week-5/raw/master/01-class-hierarchy.png)
 
 Select a specific class, such as AmericanHot, what can we learn about it? 
 
-![](https://www.raw.githubusercontent.com/QMUL-ECS735P/lab-week-5/master/02-class-description.png)
+![](https://github.com/QMUL-ECS735P/lab-week-5/raw/master/02-class-description.png)
 
 Along with classes, we also have object properties. Navigate to the `Object properties` tab to see all the properties defined in this ontology.
 
-![](https://www.raw.githubusercontent.com/QMUL-ECS735P/lab-week-5/master/03-object-properties.png)
+![](https://github.com/QMUL-ECS735P/lab-week-5/raw/master/03-object-properties.png)
 
 ## 3. Visualising class hierarchies
 Navigate to `Window -> Tabs -> OntoGraf` and then click the now visible `OntoGraf` tab. Start selecting some classes from the class hierarchy to place them into the OntoGraf display.
 
 Along the top of the OntoGraf display are a number of options to change how the classes are laid out in the display. Below is an example of the "Vertical Directed" display. Experiment with a few different displays so you can see how the class hierarchy is ordered.
 
-![](https://www.raw.githubusercontent.com/QMUL-ECS735P/lab-week-5/master/04-ontograf.png)
+![](https://github.com/QMUL-ECS735P/lab-week-5/raw/master/04-ontograf.png)
 
 ## 4. Creating ontologies with Protege
 Your task is to create an ontology that formalises the following statements:
@@ -57,12 +57,12 @@ Create a new ontology by navigating to `File -> New` (or pressting `Ctrl+N`) and
 - `guinea_pigs`
 by clicking the `add subclass` button. 
 
-![](https://www.raw.githubusercontent.com/QMUL-ECS735P/lab-week-5/master/05-add-subclass.png)
+![](https://github.com/QMUL-ECS735P/lab-week-5/raw/master/05-add-subclass.png)
 
 
 We need to construct our ontology such we can prove `guinea_pigs` and `appreciates_beethoven` are **disjoint**.
 
-![](https://www.raw.githubusercontent.com/QMUL-ECS735P/lab-week-5/master/06-disjoint-with.png)
+![](https://github.com/QMUL-ECS735P/lab-week-5/raw/master/06-disjoint-with.png)
 
 ## 5. Using a reasoner in Protege
 Protege can use several powerful OWL reasoners to determine whether our ontology is valid. Go to the `Reasoner` menu and select the HermiT reasoner if it is not already selected, then go back to the menu and start the reasoner.
@@ -73,4 +73,4 @@ Press `Ctrl+R` to re-run our reasoner, and then in the `Classes` tab click on th
 
 We should see our `nobody` class inferred as a subclass of the _bottom_ concept (that's `owl:Nothing`).
 
-![](https://www.raw.githubusercontent.com/QMUL-ECS735P/lab-week-5/master/07-inferred-classes.png)
+![](https://github.com/QMUL-ECS735P/lab-week-5/raw/master/07-inferred-classes.png)
